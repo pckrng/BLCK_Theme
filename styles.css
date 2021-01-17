@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:ital,wght@0,800;1,800&display=swap");
+*, body, html {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+video {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.headerIntro {
+  position: relative;
+  height: 100vh;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.headerIntro h1 {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 40px;
+  padding-right: 12px;
+  letter-spacing: 4px;
+}
+
+.headerIntro h1:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.headerIntro a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 4px;
+  padding-right: 18px;
+}
+
+.headerIntro a:hover {
+  color: gray;
+}
+/*# sourceMappingURL=styles.css.map */
