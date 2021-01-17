@@ -40,7 +40,7 @@ video {
 }
 
 .headerIntro h1:hover {
-  color: black;
+  opacity: 0.2;
   cursor: pointer;
 }
 
@@ -55,6 +55,6 @@ video {
 }
 
 .headerIntro a:hover {
-  color: gray;
+  opacity: 0.2;
 }
 /*# sourceMappingURL=styles.css.map */
