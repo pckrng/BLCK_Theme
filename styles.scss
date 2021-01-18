@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:ital,wght@0,800;1,800&display=swap');
@@ -33,7 +34,7 @@ video {
 }
 
 .headerIntro h1:hover {
-    opacity: 0.2;
+    color: #ad2020c0;
     cursor: pointer;
 }
 
@@ -48,5 +49,85 @@ video {
 }
 
 .headerIntro a:hover {
-    opacity: 0.2;
+   color: #ad2020c0;
+}
+
+.textWrapper {
+    position: relative;
+    height: 100vh;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 4rem;
+    line-height: 150px;
+}
+
+li {
+    list-style: none;
+}
+
+.bigTextOne, .bigTextTwo, .bigTextThree {
+    font-size: 180px;
+}
+
+.bigTextOne:hover, .bigTextTwo:hover, .bigTextThree:hover {
+    color: #ad2020c0;
+    cursor: pointer;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    color: white;
+    text-align: right;
+    z-index: 100;
+    padding-top: 1rem;
+    padding-right: 2rem;
+}
+
+.footer p {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    vertical-align: middle;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    display: inline;
+    float: right;
+}
+
+.footer p:hover {
+    color: #ad2020c0;
+}
+
+.fab {
+    color: white;
+    z-index: 101;
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 2rem;
+}
+
+.fa-github, .fa-instagram, .fa-linkedin {
+    color: white;
+    margin-top: .75rem;
+    display: inline;
+}
+
+.fa-github:hover, .fa-instagram:hover, .fa-linkedin:hover {
+    color: #ad2020c0;
+    cursor: pointer;
+}
+
+.socialIcons {
+    display: inline;
+    padding-right: 2rem;
 }
