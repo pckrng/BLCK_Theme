@@ -15,17 +15,12 @@
           </video>
     </div>
 
-    <div class="contactIntro">
-        <div class="contactGrid">
-        <h1>what now?</h1>
-        <input type="input" id="emailInput" placeholder="EMAIL">
-        <input type="input" id="emailInput" placeholder="NAME">
-        <input type="input" id="messageInput" placeholder="MESSAGE">
-        <input type="submit">
-    </div>
-    </div>
-    
 
+    <div class="cardContainer">
+    <div class="card">
+    <h1>Recent Work</h1>
+    </div>
+    </div>
     
 <div class="footer">
     <p >Joseph Pickering</p>
@@ -34,7 +29,6 @@
         <i class="fab fa-instagram"></i>
         <i class="fab fa-linkedin"></i>
     </div>
-        
 </div>
 
 
@@ -44,7 +38,18 @@
 
 <script>
 
+const card = document.querySelector('.card')
+const cardContainer = document.querySelector('.cardContainer')
 
+cardContainer.addEventListener('mousemove', (e) => {
+    let xAxis = (window.innerWidth / 2 - e.pageX) /25;
+    let yAxis = (window.innerHeight / 2 - e.pageY) /25;
+    card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+})
+
+</script>
+
+<script>
 gsap.from("input", {duration: 2, x: 200, opacity: 0, delay: 0.2});
 gsap.from("p", {duration: 2, y: 200, opacity: 0, delay: 0.2});
 gsap.from("i", {duration: 4, opacity: 0, delay: 0.4});
