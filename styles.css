@@ -41,7 +41,7 @@ video {
 }
 
 .headerIntro h1:hover {
-  color: #ad2020c0;
+  color: #d63131c5;
   cursor: pointer;
 }
 
@@ -56,14 +56,15 @@ video {
 }
 
 .headerIntro a:hover {
-  color: #ad2020c0;
+  color: #d63131c5;
 }
 
 .contactGrid {
   position: relative;
-  height: 50vh;
-  margin-top: 200px;
-  text-align: center;
+  height: 85vh;
+  width: 70vw;
+  margin-top: 5vh;
+  text-align: left;
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
@@ -72,15 +73,49 @@ video {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: rgba(245, 245, 245, 0.116);
+  margin-left: 14vw;
+  border-radius: 8px;
 }
 
-input {
-  height: 50px;
-  width: 400px;
+input[type=input] {
+  height: 3vh;
   border: none;
   outline: none;
   opacity: 0.8;
   border-radius: 8px;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  color: black;
+  letter-spacing: 1rem;
+  width: 55vw;
+  padding: 2rem;
+  margin-bottom: .5rem;
+}
+
+input[type=submit] {
+  background-color: #d63131c5;
+  font-size: 4vw;
+  font-family: 'Open Sans', sans-serif;
+  width: 20vw;
+  border-radius: 8px;
+  margin-top: 10px;
+  border: none;
+  outline: none;
+  color: white;
+  margin-bottom: 22px;
+  text-transform: uppercase;
+  padding: 8px;
+}
+
+#messageInput {
+  height: 20vh;
+}
+
+input:hover {
+  background-color: #ad2020c0;
+  cursor: pointer;
 }
 
 .contactIntro h1 {
@@ -88,7 +123,17 @@ input {
   color: white;
   font-family: 'Open Sans', sans-serif;
   letter-spacing: .5rem;
-  font-size: 50px;
+  font-size: 5vw;
+  background-color: #d63131c5;
+  width: 100%;
+  border-radius: 8px;
+  padding: 12px;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.contactIntro h1:hover {
+  color: #d63131c5;
 }
 
 .textWrapper {
@@ -110,16 +155,14 @@ input {
   line-height: 150px;
 }
 
-li {
-  list-style: none;
-}
-
 .bigTextOne, .bigTextTwo, .bigTextThree {
   font-size: 180px;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.685);
 }
 
 .bigTextOne:hover, .bigTextTwo:hover, .bigTextThree:hover {
-  color: #ad2020c0;
+  color: #d63131c5;
   cursor: pointer;
 }
 
@@ -149,7 +192,7 @@ li {
 }
 
 .footer p:hover {
-  color: #ad2020c0;
+  color: #d63131c5;
   cursor: pointer;
 }
 
@@ -169,7 +212,7 @@ li {
 }
 
 .fa-github:hover, .fa-instagram:hover, .fa-linkedin:hover {
-  color: #ad2020c0;
+  color: #d63131c5;
   cursor: pointer;
 }
 

@@ -18,10 +18,11 @@
 
     <div class="contactIntro">
         <div class="contactGrid">
-        <h1> Contact </h1>
-        <input type="input" id="emailInput">
-        <input type="input" id="emailInput">
-        <input type="input" id="emailInput">
+        <h1>what now?</h1>
+        <input type="input" id="emailInput" placeholder="EMAIL">
+        <input type="input" id="emailInput" placeholder="NAME">
+        <input type="input" id="messageInput" placeholder="MESSAGE">
+        <input type="submit">
     </div>
     </div>
     
@@ -44,11 +45,12 @@
 
 <script>
 
-gsap.from(".bigTextOne", {duration: 2, x: -200, opacity: 0, delay: 0.2});
-gsap.from(".bigTextTwo", {duration: 2, x: 200, opacity: 0, delay: 0.2});
-gsap.from(".bigTextThree", {duration: 2, x: -200, opacity: 0, delay: 0.2});
 
-
+gsap.from("input", {duration: 2, x: 200, opacity: 0, delay: 0.2});
+gsap.from("p", {duration: 2, y: 200, opacity: 0, delay: 0.2});
+gsap.from("i", {duration: 4, opacity: 0, delay: 0.4});
+gsap.from("h1", {duration: 2, x: -200, opacity: 0, delay: 0.2});
+gsap.from(".contactGrid", {duration: 4, y: -100, opacity: 0, delay: 0.4});
 </script>
 </body>
 </html> 

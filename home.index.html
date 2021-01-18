@@ -16,10 +16,10 @@
     </div>
 <div class="textWrapper">
 <ul>
-    <li class="bigTextOne"><a id="bigText">CONTACT</a></li>
-    <li class="bigTextTwo"><a id="bigText"></a>PORTFOLIO</li>
-    <li class="bigTextThree"><a id="bigText"></a>LINKS</li>
-    
+    <a id="bigText" class="bigTextOne" href="./contact.html">CONTACT</a>
+    <a id="bigText" class="bigTextTwo" href="./index.html">PORTFOLIO</a>
+    <br>
+    <a id="bigText" class="bigTextThree" href="#">LINKS</a>
 </ul>
 </div>       
 
@@ -40,9 +40,10 @@
 
 <script>
 
-gsap.from(".bigTextOne", {duration: 2, x: -200, opacity: 0, delay: 0.2});
-gsap.from(".bigTextTwo", {duration: 2, x: 200, opacity: 0, delay: 0.2});
-gsap.from(".bigTextThree", {duration: 2, x: -200, opacity: 0, delay: 0.2});
+gsap.from("ul", {duration: 2, y: 100, opacity: 0, delay: 0.2});
+gsap.from("p", {duration: 2, y: 200, opacity: 0, delay: 0.2});
+gsap.from("i", {duration: 4, opacity: 0, delay: 0.4});
+
 
 
 </script>
