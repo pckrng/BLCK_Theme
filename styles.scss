@@ -1,8 +1,8 @@
 *, body, html {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
     overflow: hidden;
+    box-sizing: border-box;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:ital,wght@0,800;1,800&display=swap');
@@ -52,6 +52,35 @@ video {
    color: #ad2020c0;
 }
 
+.contactGrid{
+    position: relative;
+    height: 50vh;
+    margin-top: 200px;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    height: 50px;
+    width: 400px;
+    border: none;
+    outline: none;
+    opacity: 0.8;
+    border-radius: 8px;
+}
+
+.contactIntro h1 {
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: .5rem;
+    font-size: 50px;
+}
+
+
+
 .textWrapper {
     position: relative;
     height: 100vh;
@@ -89,7 +118,7 @@ li {
     text-align: right;
     z-index: 100;
     padding-top: 1rem;
-    padding-right: 2rem;
+    padding-right: 4rem;
 }
 
 .footer p {
@@ -105,6 +134,7 @@ li {
 
 .footer p:hover {
     color: #ad2020c0;
+    cursor: pointer;
 }
 
 .fab {
@@ -131,3 +161,5 @@ li {
     display: inline;
     padding-right: 2rem;
 }
+
+
