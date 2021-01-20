@@ -1,26 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:ital,wght@0,800;1,800&display=swap");
-*, body, html {
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-body {
-  background-color: black;
-}
-
-video {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
 .headerIntro {
   position: relative;
   height: 100vh;
@@ -37,7 +15,7 @@ video {
 }
 
 .headerIntro h1 {
-  color: white;
+  color: #dfdfdf;
   font-family: 'Open Sans', sans-serif;
   font-size: 40px;
   padding-right: 12px;
@@ -50,7 +28,7 @@ video {
 }
 
 .headerIntro a {
-  color: white;
+  color: #dfdfdf;
   text-decoration: none;
   font-family: 'Lato', sans-serif;
   font-weight: bold;
@@ -63,111 +41,6 @@ video {
   color: #d63131c5;
 }
 
-.contactGrid {
-  position: relative;
-  height: 85vh;
-  width: 70vw;
-  margin-top: 5vh;
-  text-align: left;
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: rgba(245, 245, 245, 0.116);
-  margin-left: 14vw;
-  border-radius: 8px;
-}
-
-input[type=input] {
-  height: 3vh;
-  border: none;
-  outline: none;
-  opacity: 0.69;
-  border-radius: 8px;
-  text-align: center;
-  font-family: 'Lato', sans-serif;
-  font-weight: bold;
-  color: #242424;
-  letter-spacing: 1rem;
-  width: 55vw;
-  padding: 2rem;
-  margin-bottom: .5rem;
-}
-
-input[type=submit] {
-  background-color: #d63131c5;
-  font-size: 4vw;
-  font-family: 'Open Sans', sans-serif;
-  width: 20vw;
-  border-radius: 8px;
-  margin-top: 10px;
-  border: none;
-  outline: none;
-  color: rgba(255, 255, 255, 0.623);
-  margin-bottom: 22px;
-  text-transform: uppercase;
-  padding: 8px;
-}
-
-#messageInput {
-  height: 20vh;
-}
-
-input:hover {
-  background-color: #ff1919c0;
-  cursor: pointer;
-  color: rgba(255, 255, 255, 0.733);
-  text-shadow: rgba(0, 0, 0, 0.39) 6px 6px 6px;
-}
-
-.contactIntro h1 {
-  text-transform: uppercase;
-  color: white;
-  font-family: 'Open Sans', sans-serif;
-  letter-spacing: .5rem;
-  font-size: 5vw;
-  background-color: #d63131c5;
-  width: 100%;
-  border-radius: 8px;
-  padding: 12px;
-  text-align: center;
-  margin-top: 1.5rem;
-}
-
-.textWrapper {
-  position: relative;
-  height: 100vh;
-  text-align: left;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-  color: white;
-  font-family: 'Open Sans', sans-serif;
-  margin-left: 4rem;
-  line-height: 150px;
-}
-
-.bigTextOne, .bigTextTwo, .bigTextThree {
-  font-size: 180px;
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.685);
-}
-
-.bigTextOne:hover, .bigTextTwo:hover, .bigTextThree:hover {
-  color: #d63131c5;
-  cursor: pointer;
-}
-
 .footer {
   position: fixed;
   left: 0;
@@ -175,7 +48,7 @@ input:hover {
   width: 100%;
   height: 60px;
   background-color: transparent;
-  color: white;
+  color: #dfdfdf;
   text-align: right;
   z-index: 100;
   padding-top: 1rem;
@@ -199,7 +72,7 @@ input:hover {
 }
 
 .fab {
-  color: white;
+  color: #dfdfdf;
   z-index: 101;
   position: relative;
   width: 2rem;
@@ -208,7 +81,7 @@ input:hover {
 }
 
 .fa-github, .fa-instagram, .fa-linkedin {
-  color: white;
+  color: #dfdfdf;
   margin-top: .75rem;
   display: inline;
 }
@@ -223,56 +96,134 @@ input:hover {
   padding-right: 2rem;
 }
 
-.cardContainer {
-  position: relative;
+*,
+body,
+html {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+body {
+  background-color: black;
+}
+
+video {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100vw;
   height: 100vh;
-  width: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.contactGrid {
+  position: relative;
+  height: 85vh;
+  width: 70vw;
   margin-top: 5vh;
-  grid-auto-flow: dense;
+  text-align: left;
   display: -ms-grid;
   display: grid;
-  grid-auto-rows: auto;
-  -ms-grid-columns: (1fr)[1];
-      grid-template-columns: repeat(1, 1fr);
-  padding: 1rem;
-  grid-gap: 1rem;
-  vertical-align: middle;
-  margin-top: 20vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(245, 245, 245, 0.116);
+  margin-left: 14vw;
+  border-radius: 8px;
 }
 
-.card {
-  -webkit-animation-duration: 0.25s;
-          animation-duration: 0.25s;
-  -webkit-transition-timing-function: ease-in;
-          transition-timing-function: ease-in;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  background-color: white;
-  width: 60vw;
-  height: 30vw;
-  padding: 1.5rem;
-  margin: 0 auto;
-  margin-top: 10vh;
-  -webkit-transform: translatey(-50);
-          transform: translatey(-50);
-  border-radius: 16px;
-  opacity: 0.85;
-  -webkit-box-shadow: 0 20px 20px rgba(255, 255, 255, 0.2), 0px 0px 50px rgba(255, 255, 255, 0.2);
-          box-shadow: 0 20px 20px rgba(255, 255, 255, 0.2), 0px 0px 50px rgba(255, 255, 255, 0.2);
+input[type="input"] {
+  height: 3vh;
+  border: none;
+  outline: none;
+  opacity: 0.69;
+  border-radius: 8px;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  color: #242424;
+  letter-spacing: 1rem;
+  width: 55vw;
+  padding: 2rem;
+  margin-bottom: 0.5rem;
 }
 
-.card--fadein {
-  -webkit-animation-name: fadein;
-          animation-name: fadein;
-}
-
-.card h1 {
-  color: #d63131c5;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 40px;
-  letter-spacing: 4px;
+input[type="submit"] {
+  background-color: #d63131c5;
+  font-size: 4vw;
+  font-family: "Open Sans", sans-serif;
+  width: 20vw;
+  border-radius: 8px;
+  margin-top: 10px;
+  border: none;
+  outline: none;
+  -webkit-columns: #dfdfdf;
+          columns: #dfdfdf;
+  margin-bottom: 22px;
   text-transform: uppercase;
-  text-shadow: rgba(0, 0, 0, 0.205) 2px 2px;
+  padding: 8px;
+}
+
+#messageInput {
+  height: 20vh;
+}
+
+input:hover {
+  background-color: #d63131c5;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.733);
+  text-shadow: rgba(0, 0, 0, 0.39) 6px 6px 6px;
+}
+
+.contactIntro h1 {
+  text-transform: uppercase;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0.5rem;
+  font-size: 5vw;
+  background-color: #d63131c5;
+  width: 100%;
+  border-radius: 8px;
+  padding: 12px;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.textWrapper {
+  position: relative;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  color: #dfdfdf;
+  font-family: "Open Sans", sans-serif;
+  margin-left: 4rem;
+}
+
+#bigTextOne,
+.bigTextTwo,
+.bigTextThree {
+  font-size: 10vw;
+  text-decoration: none;
+  color: #dfdfdf;
+}
+
+.bigTextOne:hover,
+.bigTextTwo:hover,
+.bigTextThree:hover {
+  color: #d63131c5;
+  cursor: pointer;
 }
 
 .transition-fade {
@@ -289,5 +240,46 @@ html.is-animating .transition-fade {
 
 .html.is-leaving .transition-fade {
   opacity: 0;
+}
+
+#cardContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1vw;
+}
+
+.card {
+  -webkit-animation-duration: 0.25s;
+  animation-duration: 0.25s;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  background-color: white;
+  width: 400px;
+  height: 600px;
+  padding: 1.5rem;
+  margin: 0 auto;
+  margin-top: 10vh;
+  border-radius: 16px;
+  opacity: 0.95;
+}
+
+.card--fadein {
+  -webkit-animation-name: fadein;
+  animation-name: fadein;
+}
+
+.card h1 {
+  -webkit-transform: translateZ(20px);
+          transform: translateZ(20px);
+  color: #d63131c5;
+  font-family: "Open Sans", sans-serif;
+  font-size: 40px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-shadow: rgba(0, 0, 0, 0.205) 2px 2px;
 }
 /*# sourceMappingURL=styles.css.map */

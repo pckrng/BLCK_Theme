@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "swup": "^2.0.14",
-    "tilt.js": "^1.2.1"
+    "tilt.js": "^1.2.1",
+    "vanilla-tilt": "^1.7.0"
   }
 }

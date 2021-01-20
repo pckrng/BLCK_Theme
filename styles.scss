@@ -1,266 +1,176 @@
-*, body, html {
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-    box-sizing: border-box;
+@import "./header";
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:ital,wght@0,800;1,800&display=swap");
+@import "./footer";
+
+$textColor: rgb(223, 223, 223);
+$hoverColor: #d63131c5;
+
+*,
+body,
+html {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
 }
 
 body {
-    background-color: black;
+  background-color: black;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:ital,wght@0,800;1,800&display=swap');
 
 video {
-    object-fit: cover;
-    width: 100vw;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-}
-
-.headerIntro {
-    position: relative;
-    height: 100vh;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.headerIntro h1 {
-    color: white;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 40px;
-    padding-right: 12px;
-    letter-spacing: 4px;
-}
-
-.headerIntro h1:hover {
-    color: #d63131c5;
-    cursor: pointer;
-}
-
-.headerIntro a {
-    color: white;
-    text-decoration: none;
-    font-family: 'Lato', sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 4px;
-    padding-right: 18px;
-}
-
-.headerIntro a:hover {
-   color: #d63131c5;
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .contactGrid {
-    position: relative;
-    height: 85vh;
-    width: 70vw;
-    margin-top: 5vh;
-    text-align: left;
-    display: grid;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(245, 245, 245, 0.116);
-    margin-left: 14vw;
-    border-radius: 8px;
+  position: relative;
+  height: 85vh;
+  width: 70vw;
+  margin-top: 5vh;
+  text-align: left;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(245, 245, 245, 0.116);
+  margin-left: 14vw;
+  border-radius: 8px;
 }
 
-input[type=input] {
-    height: 3vh;
-    border: none;
-    outline: none;
-    opacity: 0.69;
-    border-radius: 8px;
-    text-align: center;
-    font-family: 'Lato', sans-serif;
-    font-weight: bold;
-    color: rgb(36, 36, 36);
-    letter-spacing: 1rem;
-    width: 55vw;
-    padding: 2rem;
-    margin-bottom: .5rem;
-    
+input[type="input"] {
+  height: 3vh;
+  border: none;
+  outline: none;
+  opacity: 0.69;
+  border-radius: 8px;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  color: rgb(36, 36, 36);
+  letter-spacing: 1rem;
+  width: 55vw;
+  padding: 2rem;
+  margin-bottom: 0.5rem;
 }
 
-input[type=submit] {
-    background-color: #d63131c5;
-    font-size: 4vw;
-    font-family: 'Open Sans', sans-serif;
-    width: 20vw;
-    border-radius: 8px;
-    margin-top: 10px;
-    border: none;
-    outline: none;
-    color: rgba(255, 255, 255, 0.623);
-    margin-bottom: 22px;
-    text-transform: uppercase;
-    padding: 8px;
+input[type="submit"] {
+  background-color: $hoverColor;
+  font-size: 4vw;
+  font-family: "Open Sans", sans-serif;
+  width: 20vw;
+  border-radius: 8px;
+  margin-top: 10px;
+  border: none;
+  outline: none;
+  columns: $textColor;
+  margin-bottom: 22px;
+  text-transform: uppercase;
+  padding: 8px;
 }
 
 #messageInput {
-    height: 20vh;
+  height: 20vh;
 }
 
 input:hover {
-    background-color: #ff1919c0;
-    cursor: pointer;
-    color: rgba(255, 255, 255, 0.733);
-    text-shadow: rgba(0, 0, 0, 0.39) 6px 6px 6px;
+  background-color: $hoverColor;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.733);
+  text-shadow: rgba(0, 0, 0, 0.39) 6px 6px 6px;
 }
 
 .contactIntro h1 {
-    text-transform: uppercase;
-    color: white;
-    font-family: 'Open Sans', sans-serif;
-    letter-spacing: .5rem;
-    font-size: 5vw;
-    background-color: #d63131c5;
-    width: 100%;
-    border-radius: 8px;
-    padding: 12px;
-    text-align: center;
-    margin-top: 1.5rem;
+  text-transform: uppercase;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0.5rem;
+  font-size: 5vw;
+  background-color: $hoverColor;
+  width: 100%;
+  border-radius: 8px;
+  padding: 12px;
+  text-align: center;
+  margin-top: 1.5rem;
 }
 
 .textWrapper {
-    position: relative;
-    height: 100vh;
-    text-align: left;
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    color: white;
-    font-family: 'Open Sans', sans-serif;
-    margin-left: 4rem;
-    line-height: 150px;
+  position: relative;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  color: $textColor;
+  font-family: "Open Sans", sans-serif;
+  margin-left: 4rem;
 }
 
-
-.bigTextOne, .bigTextTwo, .bigTextThree {
-    font-size: 180px;
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.685);
+#bigTextOne,
+.bigTextTwo,
+.bigTextThree {
+  font-size: 10vw;
+  text-decoration: none;
+  color: $textColor;
 }
 
-.bigTextOne:hover, .bigTextTwo:hover, .bigTextThree:hover {
-    color: #d63131c5;
-    cursor: pointer;
-}
-
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 60px;
-    background-color: transparent;
-    color: white;
-    text-align: right;
-    z-index: 100;
-    padding-top: 1rem;
-    padding-right: 4rem;
-}
-
-.footer p {
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    vertical-align: middle;
-    font-family: 'Lato', sans-serif;
-    text-transform: uppercase;
-    display: inline;
-    float: right;
-}
-
-.footer p:hover {
-    color: #d63131c5;
-    cursor: pointer;
-}
-
-.fab {
-    color: white;
-    z-index: 101;
-    position: relative;
-    width: 2rem;
-    height: 2rem;
-    margin-right: 2rem;
-}
-
-.fa-github, .fa-instagram, .fa-linkedin {
-    color: white;
-    margin-top: .75rem;
-    display: inline;
-}
-
-.fa-github:hover, .fa-instagram:hover, .fa-linkedin:hover {
-    color: #d63131c5;
-    cursor: pointer;
-}
-
-.socialIcons {
-    display: inline;
-    padding-right: 2rem;
-}
-
-.cardContainer {
-    position: relative;
-    height: 100vh;
-    width: auto;
-    margin-top: 5vh;
-    grid-auto-flow: dense;
-    display: grid;
-    grid-auto-rows: auto;
-    grid-template-columns: repeat(1, 1fr);
-    padding: 1rem;
-    grid-gap: 1rem;
-    vertical-align: middle;
-    margin-top: 20vh;
-}
-
-.card {
-    animation-duration: 0.25s;
-    transition-timing-function: ease-in;
-    animation-fill-mode: both;
-    background-color: white;
-    width: 60vw;
-    height: 30vw;
-    padding: 1.5rem;
-    margin: 0 auto;
-    margin-top: 10vh;
-    transform: translatey(-50);
-    border-radius: 16px;
-    opacity: 0.85;
-    box-shadow: 0 20px 20px rgba(255, 255, 255, 0.2), 0px 0px 50px rgba(255, 255, 255, 0.2);
-}
-.card--fadein {
-    animation-name: fadein;
-}
-
-.card h1 {
-    color: #d63131c5;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 40px;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    text-shadow: rgba(0, 0, 0, 0.205) 2px 2px;
+.bigTextOne:hover,
+.bigTextTwo:hover,
+.bigTextThree:hover {
+  color: $hoverColor;
+  cursor: pointer;
 }
 
 .transition-fade {
-    opacity: 1;
-    transition: 500ms;
+  opacity: 1;
+  transition: 500ms;
 }
 
 html.is-animating .transition-fade {
-    opacity: 0;
-    transform: translateX(0);
+  opacity: 0;
+  transform: translateX(0);
 }
 
 .html.is-leaving .transition-fade {
-    opacity: 0;
+  opacity: 0;
 }
 
+#cardContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1vw;
+  
+}
+
+.card {
+  -webkit-animation-duration: 0.25s;
+  animation-duration: 0.25s;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  background-color: white;
+  width: 400px;
+  height: 600px;
+  padding: 1.5rem;
+  margin: 0 auto;
+  margin-top: 10vh;
+  border-radius: 16px;
+  opacity: 0.95;
+}
+
+.card--fadein {
+  -webkit-animation-name: fadein;
+  animation-name: fadein;
+}
+
+.card h1 {
+transform: translateZ(20px);
+  color: #d63131c5;
+  font-family: "Open Sans", sans-serif;
+  font-size: 40px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  text-shadow: rgba(0, 0, 0, 0.205) 2px 2px;
+}

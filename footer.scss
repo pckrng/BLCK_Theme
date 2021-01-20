@@ -1,0 +1,54 @@
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    color: $textColor;
+    text-align: right;
+    z-index: 100;
+    padding-top: 1rem;
+    padding-right: 4rem;
+}
+
+.footer p {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    vertical-align: middle;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    display: inline;
+    float: right;
+}
+
+.footer p:hover {
+    color: $hoverColor;
+    cursor: pointer;
+}
+
+.fab {
+    color: $textColor;
+    z-index: 101;
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 2rem;
+}
+
+.fa-github, .fa-instagram, .fa-linkedin {
+    color: $textColor;
+    margin-top: .75rem;
+    display: inline;
+}
+
+.fa-github:hover, .fa-instagram:hover, .fa-linkedin:hover {
+    color: $hoverColor;
+    cursor: pointer;
+}
+
+.socialIcons {
+    display: inline;
+    padding-right: 2rem;
+}

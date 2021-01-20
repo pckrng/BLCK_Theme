@@ -1,0 +1,42 @@
+.headerIntro {
+  position: relative;
+  height: 100vh;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.headerIntro h1 {
+  color: #dfdfdf;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 40px;
+  padding-right: 12px;
+  letter-spacing: 4px;
+}
+
+.headerIntro h1:hover {
+  color: #d63131c5;
+  cursor: pointer;
+}
+
+.headerIntro a {
+  color: #dfdfdf;
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 4px;
+  padding-right: 18px;
+}
+
+.headerIntro a:hover {
+  color: #d63131c5;
+}
+/*# sourceMappingURL=header.css.map */

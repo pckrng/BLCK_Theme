@@ -3,14 +3,12 @@
 <head>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles.css">
-    <script defer src="node_modules/swup/dist/swup.min.js"></script>
-    <script defer src="./Assets/script.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Black</title>
 </head>
 <body>
-<main id="swup" class="transition-fade">
+<main id="swup" class="transition-fade"></main>
     <div class="movingBackground">
         <video playsinline autoplay muted loop id="bgvid">
             <source src="./Assets/Black - 13495.mp4" type="video/mp4">
@@ -53,6 +51,5 @@ gsap.from("i", {duration: 4, opacity: 0, delay: 0.4});
 gsap.from("h1", {duration: 2, x: -200, opacity: 0, delay: 0.2});
 gsap.from(".contactGrid", {duration: 4, y: -100, opacity: 0, delay: 0.4});
 </script>
-</main>
 </body>
 </html> 
