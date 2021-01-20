@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "swup": "^2.0.14",
+    "tilt.js": "^1.2.1"
+  }
+}

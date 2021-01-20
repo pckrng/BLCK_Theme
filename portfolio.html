@@ -3,6 +3,8 @@
 <head>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles.css">
+    <script defer src="node_modules/swup/dist/swup.min.js"></script>
+    <script defer src="./Assets/script.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Black</title>
@@ -12,16 +14,16 @@
     <div class="movingBackground">
         <video playsinline autoplay muted loop id="bgvid">
             <source src="./Assets/Black - 13495.mp4" type="video/mp4">
-          </video>
+        </video>
     </div>
 
-
+    
     <div class="cardContainer">
     <div class="card">
     <h1>Recent Work</h1>
     </div>
     </div>
-    
+    </span>
 <div class="footer">
     <p >Joseph Pickering</p>
     <div class="socialIcons">
@@ -32,29 +34,15 @@
 </div>
 
 
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/CSSRulePlugin.min.js"></script>
-
 <script>
-
-const card = document.querySelector('.card')
-const cardContainer = document.querySelector('.cardContainer')
-
-cardContainer.addEventListener('mousemove', (e) => {
-    let xAxis = (window.innerWidth / 2 - e.pageX) /25;
-    let yAxis = (window.innerHeight / 2 - e.pageY) /25;
-    card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
-})
-
-</script>
-
-<script>
-gsap.from("input", {duration: 2, x: 200, opacity: 0, delay: 0.2});
+gsap.from(".card", {duration: 2, y: 100, opacity: 0, delay: 0.2});
 gsap.from("p", {duration: 2, y: 200, opacity: 0, delay: 0.2});
 gsap.from("i", {duration: 4, opacity: 0, delay: 0.4});
 gsap.from("h1", {duration: 2, x: -200, opacity: 0, delay: 0.2});
 gsap.from(".contactGrid", {duration: 4, y: -100, opacity: 0, delay: 0.4});
 </script>
+<script src="tilt.jquery.js"></script>
 </body>
 </html> 
