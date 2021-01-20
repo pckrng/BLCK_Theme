@@ -86,12 +86,12 @@ input[type=input] {
   height: 3vh;
   border: none;
   outline: none;
-  opacity: 0.8;
+  opacity: 0.69;
   border-radius: 8px;
   text-align: center;
   font-family: 'Lato', sans-serif;
   font-weight: bold;
-  color: black;
+  color: #242424;
   letter-spacing: 1rem;
   width: 55vw;
   padding: 2rem;
@@ -107,7 +107,7 @@ input[type=submit] {
   margin-top: 10px;
   border: none;
   outline: none;
-  color: white;
+  color: rgba(255, 255, 255, 0.623);
   margin-bottom: 22px;
   text-transform: uppercase;
   padding: 8px;
@@ -118,8 +118,10 @@ input[type=submit] {
 }
 
 input:hover {
-  background-color: #ad2020c0;
+  background-color: #ff1919c0;
   cursor: pointer;
+  color: rgba(255, 255, 255, 0.733);
+  text-shadow: rgba(0, 0, 0, 0.39) 6px 6px 6px;
 }
 
 .contactIntro h1 {

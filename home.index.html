@@ -8,7 +8,7 @@
     <title>Black</title>
 </head>
 <body>
-
+<main id="swup" class="transition-fade">
     <div class="movingBackground">
         <video playsinline autoplay muted loop id="bgvid">
             <source src="./Assets/Black - 13495.mp4" type="video/mp4">
@@ -20,6 +20,7 @@
     <a id="bigText" class="bigTextTwo" href="./index.html">PORTFOLIO</a>
     <br>
     <a id="bigText" class="bigTextThree" href="#">LINKS</a>
+    
 </ul>
 </div>       
 
@@ -44,8 +45,8 @@ gsap.from("ul", {duration: 2, y: 100, opacity: 0, delay: 0.2});
 gsap.from("p", {duration: 2, y: 200, opacity: 0, delay: 0.2});
 gsap.from("i", {duration: 4, opacity: 0, delay: 0.4});
 
-
-
 </script>
+</main>
+<script src="./node_modules/tilt.js/src/tilt.jquery.js"></script>
 </body>
 </html> 
